@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ahammed Hani | Linux Cheats</title>
+    <meta name="author" content="Ahammed Hani" />
+    <meta name="description" content="Essential Linux commands for productivity." />
+    <meta name="keywords" content="Linux, commands, cheats, productivity, terminal, shell" />
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="none" id="highlight_theme_light" />
+
+    <!-- Styles -->
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://AhammedHani.github.io/blog/2024/linux-cheats/">
+
+    <!-- Dark Mode -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark" />
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+</head>
+
+<body class="fixed-top-nav ">
+
+    <!-- Header -->
+    <header>
+        <!-- Nav Bar -->
+        <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand title font-weight-lighter" href="https://AhammedHani.github.io/"><span class="font-weight-bold">Ahammed Hani</span></a>
+                <!-- Navbar Toggle -->
+                <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-right" id="navbarNav">
+                    <ul class="navbar-nav ml-auto flex-nowrap">
+                        <!-- About -->
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/">About</a>
+                        </li>
+
+                        <!-- Blog -->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/blog/">Blog</a>
+                        </li>
+
+                        <!-- Other pages -->
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/projects/">Projects</a>
+                        </li>
+
+                        <!-- Toogle theme mode -->
+                        <div class="toggle-container">
+                            <a id="light-toggle">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="container mt-5">
+        <div class="post">
+            <header class="post-header">
+                <h1 class="post-title">Linux Commands Cheat Sheet</h1>
+                <p class="post-meta">August 13, 2024</p>
+                <p class="post-tags">
+                    <a href="/blog/2024"> <i class="fas fa-calendar fa-sm"></i> 2024 </a>
+                </p>
+            </header>
+
+            <article class="post-content">
+                <p>Welcome to the ultimate Linux commands cheats! Whether you’re a beginner or a seasoned developer, knowing the basic Linux commands can significantly boost your productivity. Here’s a comprehensive list of essential commands categorized for ease of use:</p>
+
+                <h2 id="basic-commands">Basic Commands</h2>
+                <ul>
+                    <li><strong>List Files and Directories</strong>
+                        <ul>
+                            <li><code>ls -la</code> - List all files and folders in the current directory, including hidden ones.</li>
+                            <li><code>ls -R</code> - Recursively list files in all sub-directories.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Directory Navigation</strong>
+                        <ul>
+                            <li><code>pwd</code> - Print the current working directory.</li>
+                            <li><code>cd</code> - Go to the home directory.</li>
+                            <li><code>cd ..</code> - Move up one directory level.</li>
+                            <li><code>cd -</code> - Switch to the previous directory.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Command History</strong>
+                        <ul>
+                            <li><code>history</code> - Display command history.</li>
+                            <li><code>history | grep command</code> - Search command history for a specific command.</li>
+                        </ul>
+                    </li>
+                    <li><strong>User Information</strong>
+                        <ul>
+                            <li><code>whoami</code> - Show the currently logged-in username.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Manual and Help</strong>
+                        <ul>
+                            <li><code>man command</code> - Display the manual for a specific command.</li>
+                            <li><code>tldr command</code> - Provide simplified help with examples for a command.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2 id="file-operations">File Operations</h2>
+                <ul>
+                    <li><strong>Viewing and Editing Files</strong>
+                        <ul>
+                            <li><code>cat filename.txt</code> - Display the content of a file.</li>
+                            <li><code>cat > filename1.txt</code> - Create a new file and write to it.</li>
+                            <li><code>touch filename2.txt</code> - Create an empty file or update the timestamp of an existing file.</li>
+                            <li><code>less filename.txt</code> - View the file content page by page.</li>
+                            <li><code>head filename.txt</code> - View the first 10 lines of a file.</li>
+                            <li><code>tail filename.txt</code> - View the last 10 lines of a file.</li>
+                        </ul>
+                    </li>
+                    <li><strong>File Management</strong>
+                        <ul>
+                            <li><code>cp sourcefile.txt /destination/path/</code> - Copy a file to a new location.</li>
+                            <li><code>mv oldname.txt newname.txt</code> - Rename a file.</li>
+                            <li><code>mv filename.txt /new/path/</code> - Move a file to a new location.</li>
+                            <li><code>file filename.txt</code> - Determine the file type.</li>
+                            <li><code>rm filename.txt</code> - Delete a file.</li>
+                            <li><code>rmdir directoryname</code> - Delete an empty directory.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2 id="directory-operations">Directory Operations</h2>
+                <ul>
+                    <li><strong>Directory Management</strong>
+                        <ul>
+                            <li><code>mkdir directoryname</code> - Create a new directory.</li>
+                            <li><code>cp -r /path/to/source /path/to/destination</code> - Recursively copy a directory and its contents.</li>
+                            <li><code>rm -rf directoryname</code> - Recursively delete a directory and its contents.</li>
+                            <li><code>tree</code> - Display directories in a tree-like format.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2 id="permissions">Permissions</h2>
+                <ul>
+                    <li><strong>Setting Permissions</strong>
+                        <ul>
+                            <li><code>chmod 755 filename.txt</code> - Change file permissions to read, write, and execute for the owner; read and execute for the group and others.</li>
+                            <li><code>chown username:groupname filename.txt</code> - Change the owner and group of a file.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2 id="system-monitoring">System Monitoring</h2>
+                <ul>
+                    <li><strong>Resource Monitoring</strong>
+                        <ul>
+                            <li><code>top</code> - Display ongoing processes and their resource usage.</li>
+                            <li><code>htop</code> - An enhanced version of top with a better user interface.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Memory and Swap Usage</strong>
+                        <ul>
+                            <li><code>free -h</code> - Display total, used, and free memory and swap usage in a human-readable format.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2 id="disk-usage">Disk Usage</h2>
+                <ul>
+                    <li><strong>Space Usage</strong>
+                        <ul>
+                            <li><code>du -sh /path/to/directory</code> - Report the size of a directory and its contents.</li>
+                            <li><code>df -h</code> - Display available disk space in a human-readable format.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2 id="networking">Networking</h2>
+                <ul>
+                    <li><strong>Network Connections</strong>
+                        <ul>
+                            <li><code>ping -c 4 google.com</code> - Send four packets to check the connectivity to Google.</li>
+                            <li><code>ifconfig</code> - Display or configure network interfaces.</li>
+                            <li><code>netstat -tulnp</code> - Display active listening ports and their associated programs.</li>
+                        </ul>
+                    </li>
+                    <li><strong>SSH</strong>
+                        <ul>
+                            <li><code>ssh user@hostname</code> - Connect to a remote server via SSH.</li>
+                            <li><code>scp file.txt user@hostname:/path/to/destination</code> - Securely copy a file to a remote server.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2 id="process-management">Process Management</h2>
+                <ul>
+                    <li><strong>Process Control</strong>
+                        <ul>
+                            <li><code>ps aux</code> - List all running processes with detailed information.</li>
+                            <li><code>kill PID</code> - Terminate a process by its Process ID.</li>
+                            <li><code>killall processname</code> - Terminate all processes with the specified name.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2 id="user-management">User Management</h2>
+                <ul>
+                    <li><strong>User Accounts</strong>
+                        <ul>
+                            <li><code>adduser username</code> - Add a new user to the system.</li>
+                            <li><code>deluser username</code> - Remove a user from the system.</li>
+                            <li><code>passwd username</code> - Change the password for a user.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2 id="package-management">Package Management</h2>
+                <ul>
+                    <li><strong>Package Installation and Removal</strong>
+                        <ul>
+                            <li><code>apt-get update</code> - Update the list of available packages.</li>
+                            <li><code>apt-get install package</code> - Install a new package.</li>
+                            <li><code>apt-get remove package</code> - Remove an installed package.</li>
+                            <li><code>apt-get upgrade</code> - Upgrade all installed packages to their latest versions.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2 id="search-and-filtering">Search and Filtering</h2>
+                <ul>
+                    <li><strong>Searching and Filtering</strong>
+                        <ul>
+                            <li><code>grep 'search_term' filename.txt</code> - Search for a term within a file.</li>
+                            <li><code>find /path -name 'filename'</code> - Locate files with a specific name within a path.</li>
+                            <li><code>locate filename</code> - Find files by name, quickly searching a database of file paths.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2 id="system-info">System Information</h2>
+                <ul>
+                    <li><strong>System Overview</strong>
+                        <ul>
+                            <li><code>uname -a</code> - Display detailed information about the system.</li>
+                            <li><code>lsb_release -a</code> - Show the distribution details.</li>
+                            <li><code>lscpu</code> - Display CPU architecture information.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <p class="text-center">&copy; 2024 Ahammed Hani. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js" integrity="sha256-vpvcXyTCASr0c0fDRzAuv/64y33Y8MUnct5iJgd+gOA=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha256-mFY+9OZ7PeG9+9BYQ1NqckDf+mBJlERJcNoygFaQ9iw=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha256-pK8iG2e4x5E2I4V/5xI6j6T+hcW8Y6ykJjc9/CK/Oas=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-qXmJ3sb4M16R97afVfQgViAn2PgDqhlSNm3RIbVB6Oo=" crossorigin="anonymous"></script>
+</body>
+
+</html>
